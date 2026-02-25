@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/repo/broker_ocean/data/master/ocean_solutions_master.csv && python3 -c \"\nimport pandas as pd\ndf = pd.read_csv\\('./data/master/ocean_solutions_master.csv', parse_dates=['date','period']\\)\nprint\\('Shape:', df.shape\\)\nprint\\('Columns:', df.columns.tolist\\(\\)\\)\nprint\\('instruments:', df['instrument'].unique\\(\\)\\)\nprint\\('periodTypes:', df['periodType'].unique\\(\\)\\)\nprint\\('Date range:', df['date'].min\\(\\), 'to', df['date'].max\\(\\)\\)\nprint\\(df.dtypes\\)\n\" 2>/dev/null)",
+      "Bash(head:*)"
+    ]
+  }
+}
